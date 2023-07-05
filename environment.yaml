@@ -1,0 +1,16 @@
+name: ml-playground
+channels:
+    - conda-forge
+    - pytorch
+    - districtdatalabs
+    - defaults
+dependencies:
+    - python >= 3.8
+    - pip
+    - ipykernel
+    - numpy
+    - scipy
+    - pandas
+    - scikit-learn
+    - yellowbrick
+    - xlrd
