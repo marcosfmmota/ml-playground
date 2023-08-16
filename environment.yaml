@@ -8,9 +8,14 @@ dependencies:
     - python >= 3.8
     - pip
     - ipykernel
+    - ipywidgets
     - numpy
     - scipy
     - pandas
     - scikit-learn
     - yellowbrick
     - xlrd
+    - ydata-profiling
+    - pyjanitor
+    - xgboost
+    - mlxtend
