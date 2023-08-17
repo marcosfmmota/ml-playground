@@ -19,3 +19,4 @@ dependencies:
     - pyjanitor
     - xgboost
     - mlxtend
+    - missingno
