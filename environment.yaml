@@ -2,6 +2,7 @@ name: ml-playground
 channels:
     - conda-forge
     - pytorch
+    - nvidia
     - districtdatalabs
     - defaults
 dependencies:
