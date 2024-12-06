@@ -79,7 +79,7 @@ def one_training_step(model, images_batch, labels_batch):
 def fit(model, images, labels, epochs, batch_size=128):
     for epoch_counter in range(epochs):
         print(f"Epoch {epoch_counter}")
-        batch_generator = BatchGenerator(images, labels)
+        batch_generator = BatchGenerator(images, labels, batch_size)
         for batch_counter in range(batch_generator.num_batches):
             images_batch, labels_batch = batch_generator.next()
             loss = one_training_step(model, images_batch, labels_batch)
