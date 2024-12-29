@@ -83,4 +83,3 @@ plt.show()
 model.fit(x_train, y_train, epochs=4, batch_size=512)
 results = model.evaluate(x_test, y_test)
 print(f"Test set loss {results[0]} - accuracy {results[1]}")
-# %%
