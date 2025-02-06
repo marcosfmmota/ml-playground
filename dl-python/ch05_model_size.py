@@ -73,3 +73,50 @@ plot_config = {
     "label2": "Validation loss of smaller model",
 }
 plot_comparision_history(history_original_model, history_smaller_model, plot_config)
+
+# %%
+model = keras.Sequential(
+    [
+        layers.Dense(512, activation="relu"),
+        layers.Dense(512, activation="relu"),
+        layers.Dense(1, activation="sigmoid"),
+    ]
+)
+
+model.compile(optimizer="rmsprop", loss="binary_crossentropy", metrics=["accuracy"])
+history_larger_model = model.fit(
+    train_data, train_labels, epochs=20, batch_size=512, validation_split=0.4
+)
+
+# %%
+plot_config = {
+    "title": "Original model vs. larger model (IMDB review classification)",
+    "label1": "Validation loss of original model",
+    "label2": "Validation loss of larger model",
+}
+plot_comparision_history(history_original_model, history_larger_model, plot_config)
+
+# %%
+# Adding dropout
+model = keras.Sequential(
+    [
+        layers.Dense(16, activation="relu"),
+        layers.Dropout(0.5),
+        layers.Dense(16, activation="relu"),
+        layers.Dropout(0.5),
+        layers.Dense(1, activation="sigmoid"),
+    ]
+)
+model.compile(optimizer="rmsprop", loss="binary_crossentropy", metrics=["accuracy"])
+history_dropout = model.fit(
+    train_data, train_labels, epochs=20, batch_size=512, validation_split=0.4
+)
+
+plot_config = {
+    "title": "Original model vs. dropout model (IMDB review classification)",
+    "label1": "Validation loss of original model",
+    "label2": "Validation loss of dropout model",
+}
+plot_comparision_history(history_original_model, history_dropout, plot_config)
+
+# %%
