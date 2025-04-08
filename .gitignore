@@ -161,3 +161,5 @@ cython_debug/
 
 # Ignore FitBit dataset folder
 fitbit_dataset_analysis/fitbit-dataset/
+
+*.png
