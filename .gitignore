@@ -163,3 +163,4 @@ cython_debug/
 fitbit_dataset_analysis/fitbit-dataset/
 
 *.png
+*.jpg
