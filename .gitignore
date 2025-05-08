@@ -164,3 +164,4 @@ fitbit_dataset_analysis/fitbit-dataset/
 
 *.png
 *.jpg
+*.keras
