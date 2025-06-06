@@ -159,9 +159,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ignore FitBit dataset folder
-fitbit_dataset_analysis/fitbit-dataset/
-
+# Other File formats
 *.png
 *.jpg
 *.keras
+
+# Ignore FitBit dataset folder
+fitbit_dataset_analysis/fitbit-dataset/
+dl-python/dogs_vs_cats_small/
+dl-python/pets
